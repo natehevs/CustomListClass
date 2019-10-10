@@ -125,5 +125,30 @@ namespace CustomListTests
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+
+        public void CapacityOfList()
+        {
+            //arange
+            CustomLists<int> testList = new CustomLists<int>();
+            int expected = 8;
+            int actual;
+
+            //act
+            testList.Add(23);
+            testList.Add(332);
+            testList.Add(43);
+            testList.Add(32);
+            testList.Add(52);
+            testList.Add(63);
+            testList.Add(82);
+            testList.Add(97);
+            actual = testList.Count;
+
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
